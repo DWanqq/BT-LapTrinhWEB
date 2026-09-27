@@ -1,10 +1,10 @@
-cat <<'EOF' > README.md
+
 # BÁO CÁO BÀI TẬP MÔN LẬP TRÌNH WEB
 
-* **Giảng viên hướng dẫn:** Duy Cốp
-* **Sinh viên thực hiện:** DWanqq
-* **Repository:** [BT-LapTrinhWEB](https://github.com/DWanqq/BT-LapTrinhWEB)
-
+* **Giảng viên hướng dẫn:** Đỗ Duy Cốp
+* **Sinh viên thực hiện:** Trần Đình Quang 
+* **Mssv**  : K235480106057
+* **Lớp**   : K59KMT
 ---
 
 ##  BÀI 1: THIẾT LẬP MÔI TRƯỜNG PHÁT TRIỂN WEB DEV & GIT
