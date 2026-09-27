@@ -8,7 +8,7 @@
 ##  BÀI 1: THIẾT LẬP MÔI TRƯỜNG PHÁT TRIỂN WEB DEV & GIT
 * **Mục tiêu:** Cấu hình môi trường Linux (WSL2), cài đặt Docker và kết nối SSH an toàn với GitHub.
 * **Nội dung thực hiện:**
-  1. Khởi tạo môi trường **WSL2 (Ubuntu)** trên hệ điều hành Windows.
+1. Khởi tạo môi trường **WSL2 (Ubuntu)** trên hệ điều hành Windows.
   2. Cấu hình thông tin cá nhân Git (`user.name`, `user.email`).
   3. Tạo mã xác thực SSH Key (`ed25519`) để kết nối an toàn với GitHub.
   4. Khởi tạo repository công khai `BT-LapTrinhWEB` trên GitHub.
