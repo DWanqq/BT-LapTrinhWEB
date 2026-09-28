@@ -1,96 +1,46 @@
-\# BÁO CÁO BÀI TẬP MÔN LẬP TRÌNH WEB
+# BÁO CÁO BÀI TẬP LỚN - MÔN PHÁT TRIỂN ỨNG DỤNG TRÊN NỀN WEB
 
+---
 
+## THÔNG TIN CHUNG
 
-\## TỔNG QUAN BÁO CÁO (OVERVIEW)
+| Hạng mục | Chi tiết |
+| :--- | :--- |
+| **Môn học** | **Phát triển ứng dụng trên nền web** |
+| **Giảng viên hướng dẫn** | Đỗ Duy Cốp |
+| **Sinh viên thực hiện** | **Trần Đình Quang** |
+| **Mã sinh viên (MSSV)** | `K235480106057` |
+| **Lớp** | K59KMT |
+| **Repository** | [BT-LapTrinhWEB](https://github.com/DWanqq/BT-LapTrinhWEB) |
+| **Tên miền Public** | [web-login-dwanqq.serveousercontent.com](https://web-login-dwanqq.serveousercontent.com) |
 
-\* \*\*Môn học:\*\* Lập trình Web
+---
 
-\* \*\*Giảng viên hướng dẫn:\*\* Đỗ Duy Cốp
+## CẤU TRÚC HỆ THỐNG VÀ NỘI DUNG THỰC HIỆN
 
-\* \*\*Sinh viên thực hiện:\*\* Trần Đình Quang
+* **Website 1:** Môi trường Web Login phát triển bằng Python Flask.
+* **Website 2:** Trang Quản trị/Dashboard báo cáo hệ thống.
+* **Nginx Reverse Proxy:** Điều hướng người dùng giữa 2 Website trên cùng cổng 80.
+* **Docker Compose:** Đóng gói và quản lý đa container tự động.
 
-\* \*\*Mã sinh viên (MSSV):\*\* K235480106057
+---
 
-\* \*\*Lớp:\*\* K59KMT
+## HÌNH ẢNH MINH HỌA VÀ KẾT QUẢ DEMO
 
+### 1. Cấu trúc Cây thư mục Dự án
+![Structure](evidence/01-structure.png)
 
+---
 
-\---
+### 2. Trạng thái Docker Compose Containers
+![Docker](evidence/02-docker.png)
 
+---
 
+### 3. Giao diện Website 1 (Form Đăng nhập)
+![Website 1](evidence/03-web1.png)
 
-\## BÀI 1: THIẾT LẬP MÔI TRƯỜNG PHÁT TRIỂN WEB DEV \& GIT
+---
 
-\* \*\*Mục tiêu:\*\* Cấu hình môi trường Linux (WSL2), cài đặt Docker và kết nối SSH an toàn với GitHub.
-
-\* \*\*Nội dung thực hiện:\*\*
-
-1\. Khởi tạo môi trường \*\*WSL2 (Ubuntu)\*\* trên hệ điều hành Windows.
-
-2\. Cấu hình thông tin cá nhân Git (`user.name`, `user.email`).
-
-3\. Tạo mã xác thực SSH Key (`ed25519`) để kết nối an toàn với GitHub.
-
-4\. Khởi tạo repository công khai `BT-LapTrinhWEB` trên GitHub.
-
-
-
-\---
-
-
-
-\## BÀI 2: XÂY DỰNG WEB LOGIN, DOCKER \& CẤU HÌNH TÊN MIỀN FREE
-
-\* \*\*Mục tiêu:\*\* Lập trình ứng dụng Web Login bằng \*\*Python (Flask)\*\*, đóng gói bằng \*\*Docker\*\* và cấu hình tên miền truy cập miễn phí.
-
-\* \*\*Thành phần mã nguồn:\*\*
-
-\* `app.py`: Giao diện HTML/CSS và logic xác thực đăng nhập.
-
-\* `requirements.txt`: Khai báo thư viện Flask.
-
-\* `Dockerfile`: Kịch bản đóng gói ứng dụng trên nền Python 3.10-slim.
-
-
-
-\---
-
-
-
-\## CẤU HÌNH TÊN MIỀN (DOMAIN CONFIGURATION)
-
-
-
-\### 1. Tên miền Nội bộ (Local Domain)
-
-\* \*\*Đường dẫn truy cập nội bộ:\*\* `\[http://web-login.local:5000](http://web-login.local:5000)`
-
-
-
-\### 2. Tên miền Công cộng Miễn phí (Free Public Domain)
-
-\* \*\*Đường dẫn truy cập công cộng:\*\* \[https://web-login-dwanqq.serveousercontent.com](https://web-login-dwanqq.serveousercontent.com)
-
-
-
-\---
-
-
-
-\## HƯỚNG DẪN KHỞI CHẠY ỨNG DỤNG (CLI)
-
-
-
-```bash
-
-\# 1. Đóng gói Docker Image
-
-docker build -t web-login-app .
-
-
-
-\# 2. Khởi chạy Docker Container
-
-docker run -d -p 5000:5000 --name running-web-login web-login-app
-
+### 4. Giao diện Website 2 (Trang Quản trị / Dashboard)
+![Website 2](evidence/04-web2.png)
